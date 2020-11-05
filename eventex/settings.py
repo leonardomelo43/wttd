@@ -125,6 +125,12 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+#Extra places to collectstatic to find static files
+
+STATICFILES_DIRS = (
+        os.path.join(BASE_DIR, 'static')
+)
+
 # Email configuration
 
 #EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
